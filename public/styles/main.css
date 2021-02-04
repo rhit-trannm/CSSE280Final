@@ -1,0 +1,193 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+/* ---------------------- Login Screen ---------------------- */
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+  width: 50%;
+  margin: auto;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for login buttons */
+#buttonLogin {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for login buttons */
+#buttonLogin:hover {
+  opacity: 0.8;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+  height: 10%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* ---------------------- Login Screen ---------------------- */
+
+/* ---------------------- Left Side Navbar ---------------------- */
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+#usersName{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  #divisions{
+      text-align: left;
+      font-size: 30px;
+      font-weight: 300;
+  }
+  #usrdata{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    padding: 10px 10px 10px 10px;
+  }
+
+  /* ---------------------- Left Side Navbar ---------------------- */
+
+  
+  /* ---------------------- Friends ---------------------- */
+
+  #friend-list { 
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 100%;
+    background: #EEE;
+    list-style-type: none;
+  }
+  
+  .friend {
+    width: 300px;
+    height: 60px;
+    background: #EEE;
+    border-bottom: 1px solid #DDD;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .friend img {
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    border: 2px solid #AAA;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  
+  .friend .name {
+    font-size: 18px;
+  }
+  
+  .friend.selected {
+    background: #43A047;
+    color: white;
+  }
+  
+  .friend.selected img {
+    border-color: white;
+  }
+  
+  .friend:not(.selected):hover {
+    background: #DDD;
+  }
+
+
+
+  

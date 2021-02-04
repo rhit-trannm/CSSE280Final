@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Home</title>
+</head>
+
+<body>
+    
+  <div id="mainPage" class="container page-container">
+    <div class="row">
+
+        <div class="col-2">
+            <div class="sidenav">
+                <a href="#">Home</a>
+                <a href="#">Reserve</a>
+                <a href="#">Friends</a>
+                <a href="#">LFG</a>
+              </div>
+        </div>
+        <div class="col-10">
+            <div class="card">
+                <div class="imgcontainer">
+                <img src="profiles.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="container">
+                  <p id="usersName"> Jane Doe </p>
+                  <p id="divisions">Remaining Hours</p>
+                  <p id="usrdata">6 Hours</p>
+                  <p id="divisions">Current Reservation</p>
+                  <p id="usrdata">None</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
