@@ -24,22 +24,22 @@ body {
 }
 /* ---------------------- Login Screen ---------------------- */
 
-/* ---------------------- Navbar ---------------------- */
+/* ---------------------- Home ---------------------- */
 
 
 #usersName{
-    font-size: 50px;
+    font-size: 2rem;
     text-align: center;
     font-weight: 500;
 }
   #divisions{
       text-align: left;
-      font-size: 30px;
+      font-size: 1.5rem;
       font-weight: 300;
   }
   #usrdata{
     text-align: center;
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 500;
     padding: 10px 10px 10px 10px;
   }
