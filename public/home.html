@@ -12,31 +12,33 @@
 </head>
 
 <body>
-    
-  <div id="mainPage" class="container page-container">
-    <div class="icon-bar">
-      <a class="active" href="#"><i class="fa fa-home"></i></a>
-      <a href="#"><i class="fa fa-search"></i></a>
-      <a href="#"><i class="fa fa-envelope"></i></a>
-      <a href="#"><i class="fa fa-globe"></i></a>
-      <a href="#"><i class="fa fa-trash"></i></a>
-    </div>
 
-        <div class="col-10">
-            <div class="card">
-                <div class="imgcontainer">
-                <img src="profiles.png" alt="Avatar" class="avatar">
-                </div>
-                <div class="container">
-                  <p id="usersName"> Jane Doe </p>
-                  <p id="divisions">Remaining Hours</p>
-                  <p id="usrdata">6 Hours</p>
-                  <p id="divisions">Current Reservation</p>
-                  <p id="usrdata">None</p>
-                </div>
-              </div>
-        </div>
+  <div id="mainPage" class="container page-container">
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <a class="navbar-brand" href="#"><i class="material-icons">home</i></a>
+      <a class="navbar-brand" href="#"><i class="material-icons">alarm</i></a>
+      <a class="navbar-brand" href="#"><i class="material-icons">group</i></a>
+    </nav>
+    <!-- <div class="imgcontainer">
+  <img src="profiles.png" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+    
+  </div> -->
+    <div class="d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        <div class="imgcontainer"><img src="profiles.png" class="img-fluid"></div>
+      <div class="card-body">
+        <p id="usersName"> Jane Doe </p>
+        <p id="divisions">Remaining Hours</p>
+        <p id="usrdata">6 Hours</p>
+        <p id="divisions">Current Reservation</p>
+        <p id="usrdata">None</p>
+      </div>
     </div>
+  </div>
+  </div>
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
   <script src="scripts/bootstrap-material-design.js"></script>
