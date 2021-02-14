@@ -7,30 +7,16 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
   <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
   <link rel="stylesheet" href="styles/main.css">
+ 
   <title>Login</title>
 </head>
 
 <body>
   <div id="mainPage" class="container page-container">
-    <form action="action_page.php" method="post">
-      <!-- <div class="imgcontainer">
-        <img src="img_avatar2.png" alt="Avatar" class="avatar">
-      </div> -->
 
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-    
-        <button id="buttonLogin" type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
+      <div id="loginPage" class="container page-container">
+        <button id="roseFireButton" type="button" class="btn">Sign in with Rosefire</button>
       </div>
-    
-    </form>
 
   </div>
   <script src="scripts/jquery.min.js"></script>
@@ -42,6 +28,7 @@
   <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
   <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
   <script src="/__/firebase/init.js"></script>
+  <script src="scripts/rosefire.min.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 

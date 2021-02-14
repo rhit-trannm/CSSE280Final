@@ -13,77 +13,19 @@ body {
 
 /* ---------------------- Login Screen ---------------------- */
 
-/* Bordered form */
-form {
-  border: 3px solid #f1f1f1;
-  width: 50%;
-  margin: auto;
-}
-
-/* Full-width inputs */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Set a style for login buttons */
-#buttonLogin {
-  background-color: #4CAF50;
+#roseFireButton{
+  display: block;
+  margin: 60px auto;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+  background: #800000;
+  font-size: 1.1em;
+  padding: 10px 30px;
+  border-radius: 5px;
 }
-
-/* Add a hover effect for login buttons */
-#buttonLogin:hover {
-  opacity: 0.8;
-}
-
-/* Center the avatar image inside this container */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-img.avatar {
-  width: 20%;
-  border-radius: 50%;
-  height: 10%;
-}
-
-/* Add padding to containers */
-.container {
-  padding: 16px;
-}
-
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
-}
-
 /* ---------------------- Login Screen ---------------------- */
 
-/* ---------------------- Left Side Navbar ---------------------- */
+/* ---------------------- Navbar ---------------------- */
+
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -97,33 +39,6 @@ span.psw {
     text-align: center;
     font-weight: 500;
 }
-/* The sidebar menu */
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-
   #divisions{
       text-align: left;
       font-size: 30px;
@@ -135,6 +50,32 @@ span.psw {
     font-weight: 500;
     padding: 10px 10px 10px 10px;
   }
+  .icon-bar {
+    width: auto; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+    bottom: 0;
+    position: fixed;
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 33%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .active {
+    background-color: #4CAF50; /* Add an active/current color */
+  }
+
 
   /* ---------------------- Left Side Navbar ---------------------- */
 
