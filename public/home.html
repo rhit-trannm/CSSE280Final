@@ -25,10 +25,11 @@
   <div class="container">
     
   </div> -->
+  <div id="homepage"></div>
     <div class="d-flex justify-content-center">
     <div class="card" style="width: 20rem;">
       <div class="card-header">
-        <div class="imgcontainer"><img src="profiles.png" class="img-fluid"></div>
+        <div class="imgcontainer"><img data-toggle="modal" data-target="#modal1" src="profiles.png" class="img-fluid"></div>
       <div class="card-body">
         <p id="usersName"> Jane Doe </p>
         <p id="divisions">Remaining Hours</p>
@@ -39,6 +40,29 @@
     </div>
   </div>
   </div>
+
+
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="Add quote dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Change Profile Picture</h5>
+        </div>
+        <div class="modal-body">
+          <div class="form-group bmd-form-group">
+            <label for="inputQuote" class="bmd-label-floating">IMAGE ADRESS</label>
+            <input type="text" class="form-control" id="inputQuote">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+          <button id="submitAddQuote" type="button" class="btn btn-primary" data-dismiss="modal">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
   <script src="scripts/bootstrap-material-design.js"></script>
