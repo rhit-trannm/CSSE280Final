@@ -10,7 +10,7 @@ rhit.FbAuthManager = null;
 
 
 rhit.HomePageController = class {
-	constructor() {
+	constructor(uid) {
 		$("#modal1").on("show.bs.modal", (event) => {
 			// Pre animation
 			document.querySelector("#inputQuote").value = "";
@@ -21,7 +21,6 @@ rhit.HomePageController = class {
 			// Post animation
 			document.querySelector("#inputQuote").focus();
 		});
-		window.location.href = `home.html?uid=${rhit.FbAuthManager.uid}`;
 	}
 
 }
@@ -38,7 +37,7 @@ rhit.fbUsersInfoManager = class {
 	}
 	add(name) {
 		// Add a new document with a generated id.
-		this._ref.add({
+		this._ref.doc(rhit.FbAuthManager.uid).set({
 				[rhit.FB_KEY_AUTHOR]: rhit.FbAuthManager.uid,
 				[rhit.FB_KEY_NAME]: name,
 				[rhit.FB_KEY_HOURS]: null,
