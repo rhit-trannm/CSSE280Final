@@ -9,26 +9,112 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Home</title>
+
+  <style>
+    /*the container must be positioned relative:*/
+    .custom-select {
+      position: relative;
+      font-family: Arial;
+      color: black
+    }
+    
+    .custom-select select {
+      display: none; /*hide original SELECT element:*/
+    }
+    
+    
+    /*style the arrow inside the select element:*/
+    .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 14px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: #fff transparent transparent transparent;
+    }
+    
+    /*point the arrow upwards when the select box is open (active):*/
+    .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      top: 7px;
+    }
+    
+    /*style the items (options), including the selected item:*/
+    .select-items div,.select-selected {
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    /*style items (options):*/
+    .select-items {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+    }
+    
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+      display: none;
+    }
+    
+    .select-items div:hover, .same-as-selected {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    </style>
 </head>
 
 <body>
+  <header class="bmd-layout-header">
+    <div class="navbar navbar-dark bg-faded fixed-top">
+      <a class="navbar-brand" href="#">Reserve</a>
+      <a id="menuSignOut" class="navbar-nav"><i class="material-icons">login</i>Sign Out</a>
+    </div>
+  </header>
 
   <div id="mainPage" class="container page-container">
-    <nav class="navbar fixed-bottom navbar-light bg-light">
-      <a class="navbar-brand" href="#"><i class="material-icons">home</i></a>
-      <a class="navbar-brand" href="#"><i class="material-icons">alarm</i></a>
-      <a class="navbar-brand" href="#"><i class="material-icons">group</i></a>
+    <nav class="navbar fixed-bottom navbar-light">
+      <a class="navbar-brand" href="/home.html"><i class="material-icons">home</i></a>
+      <a class="navbar-brand" href="/reserve.html"><i class="material-icons">alarm</i></a>
+      <a class="navbar-brand" href="/list.html"><i class="material-icons">group</i></a>
     </nav>
+
+
     <!-- <div class="imgcontainer">
   <img src="profiles.png" alt="Avatar" class="avatar">
   </div>
   <div class="container">
     
   </div> -->
-  <div id="homepage"></div>
+  <div id="reservepage"></div>
     <div class="d-flex justify-content-center">
-
   </div>
+
+
+  <div class="custom-select" style="width:200px;">
+    <select>
+      <option value="0">Select Time</option>
+      <option value="1">8:00</option>
+      <option value="2">9:00</option>
+      <option value="3">10:00</option>
+      <option value="4">11:00</option>
+      <option value="5">12:00</option>
+      <option value="6">13:00</option>
+      <option value="7">14:00</option>
+      <option value="8">15:00</option>
+      <option value="9">16:00</option>
+      <option value="10">17:00</option>
+      <option value="11">18:00</option>
+      <option value="12">19:00</option>
+    </select>
+  </div>
+  <button type="button" class="btn btn-primary">Submit</button>
 
 
 

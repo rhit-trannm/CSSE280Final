@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>body{background-color: #2E2D2D;} </style>
+  <title>Movie Quotes</title>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-bottom navbar-light">
+    <a class="navbar-brand" href="/home.html"><i class="material-icons">home</i></a>
+    <a class="navbar-brand" href="/reserve.html"><i class="material-icons">alarm</i></a>
+    <a class="navbar-brand" href="/list.html"><i class="material-icons">group</i></a>
+  </nav>
+  <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+    <header class="bmd-layout-header">
+      <div class="navbar navbar-dark bg-faded fixed-top">
+        <a class="navbar-brand" href="#">Events</a>
+        <a id="menuSignOut" class="navbar-nav"><i class="material-icons">login</i>Sign Out</a>
+      </div>
+    </header>
+    <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+      <header>
+        <a class="navbar-brand">Events</a>
+      </header>
+    </div>
+    <main class="bmd-layout-content">
+      <div id="listPage" class="container page-container">
+        <div id="quoteListContainer"></div>
+      </div>
+    </main>
+  </div>
+
+
+
+
+
+
+
+  <button id="fab" type="button" class="btn bmd-btn-fab" data-toggle="modal" data-target="#addQuoteDialog">
+    <i class="material-icons">add</i>
+  </button>
+
+
+  <!-- Modals -->
+  <div class="modal fade" id="addQuoteDialog" tabindex="-1" role="dialog" aria-labelledby="Add quote dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Events</h5>
+        </div>
+        <div class="modal-body">
+          <div class="form-group bmd-form-group">
+            <label for="inputQuote" class="bmd-label-floating">Events</label>
+            <input type="text" class="form-control" id="inputQuote">
+          </div>
+          <div class="form-group bmd-form-group">
+            <label for="inputMovie" class="bmd-label-floating">Event</label>
+            <input type="text" class="form-control" id="inputMovie">
+            <span class="bmd-help">Event Description</span>
+          </div>
+          <div class="form-group bmd-form-group">
+            <label for="inputTime" class="bmd-label-floating">Time</label>
+            <input type="text" class="form-control" id="inputTime">
+            <span class="bmd-help">What time is the event</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+          <button id="submitAddQuote" type="button" class="btn btn-primary" data-dismiss="modal">CREATE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>
+    $("body").bootstrapMaterialDesign();
+  </script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

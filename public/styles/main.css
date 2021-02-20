@@ -3,12 +3,36 @@ body {
 }
 
 .navbar {
-    background-color: #800000;
-    color: white;
+    background-color: #A84242;
+    color: #A84242;
 }
 
 .page-container {
     margin-top: 75px;
+}
+#menuSignOut{
+  color: white !important; 
+}
+/* /////////////////////// */
+#fab {
+  background: #800000;
+  bottom: 10px;
+  color: white;
+  position: fixed;
+  right: 10px;
+  z-index: 999;
+}
+
+#listPage .card-title,
+#listPage .card-subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+}
+.card {
+  margin: 10px 0;
+  background-color: #A84242;
 }
 
 /* ---------------------- Login Screen ---------------------- */
@@ -43,6 +67,13 @@ body {
     font-weight: 500;
     padding: 10px 10px 10px 10px;
   }
+#profpic{
+  border-radius: 50%;
+  align-content: center;
+  margin: 7%;
+  border: 10px solid;
+  border-color: white;
+}
 
 
   /* ---------------------- Left Side Navbar ---------------------- */
